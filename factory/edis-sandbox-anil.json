@@ -1,0 +1,9 @@
+{
+	"name": "edis-sandbox-anil",
+	"location": "northcentralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e3fce8c7-8250-439f-a8c3-bd0b28cc60f8",
+		"tenantId": "52396626-9694-4c25-b1ae-f526c756cc35"
+	}
+}
