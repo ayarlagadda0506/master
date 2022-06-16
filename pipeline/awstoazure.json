@@ -18,7 +18,7 @@
 					"source": {
 						"type": "ParquetSource",
 						"storeSettings": {
-							"type": "AmazonS3ReadSettings",
+							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
 							"enablePartitionDiscovery": false
 						}
@@ -44,7 +44,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "awss3",
+						"referenceName": "azureblob",
 						"type": "DatasetReference"
 					}
 				],
