@@ -2,11 +2,21 @@
 	"name": "AzureBlobStorage",
 	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
+		"parameters": {
+			"folder": {
+				"type": "string",
+				"defaultValue": "anil"
+			},
+			"file": {
+				"type": "string",
+				"defaultValue": "sample"
+			}
+		},
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
 			"connectionString": "DefaultEndpointsProtocol=https;AccountName=edisdatalake1;EndpointSuffix=core.windows.net;",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDlEMTI0RDk4LTVDNUYtNEM5Qy04MUZCLTQ1NEUwQ0Y2RTZBOF8zNzg5YmU2Mi0wYjc1LTQ4MzktYjc1NC1mOWQwZDI0ZTk1ZTQiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDlEMTI0RDk4LTVDNUYtNEM5Qy04MUZCLTQ1NEUwQ0Y2RTZBOF81MjI4OTU1NS1kODFmLTQ2ZGUtYTcwNi1lMGQyODU0MjAxNzYiDQp9"
 		}
 	}
 }
