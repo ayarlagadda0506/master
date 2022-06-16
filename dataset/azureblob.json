@@ -3,14 +3,35 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"folder": "anil",
+				"file": "sample"
+			}
+		},
+		"parameters": {
+			"folder": {
+				"type": "string",
+				"defaultValue": "anil"
+			},
+			"file": {
+				"type": "string",
+				"defaultValue": "sample"
+			}
 		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "anil",
+				"fileName": {
+					"value": "@dataset().file",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().folder",
+					"type": "Expression"
+				},
 				"container": "edis-sandbox"
 			},
 			"compressionCodec": "snappy"
