@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "new.parquet",
 				"folderPath": "anil",
 				"container": "edis-sandbox"
 			},
