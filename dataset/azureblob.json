@@ -1,0 +1,29 @@
+{
+	"name": "azureblob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "anil",
+				"container": "edis-sandbox"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "clnum",
+				"type": "UTF8"
+			},
+			{
+				"name": "clname1",
+				"type": "UTF8"
+			}
+		]
+	}
+}
