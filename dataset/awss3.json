@@ -1,5 +1,5 @@
 {
-	"name": "Parquet1",
+	"name": "awss3",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AmazonS3",

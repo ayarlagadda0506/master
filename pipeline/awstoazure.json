@@ -1,5 +1,5 @@
 {
-	"name": "awss3",
+	"name": "awstoazure",
 	"properties": {
 		"activities": [
 			{
@@ -44,7 +44,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Parquet1",
+						"referenceName": "awss3",
 						"type": "DatasetReference"
 					}
 				],
