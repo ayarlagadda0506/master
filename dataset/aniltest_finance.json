@@ -1,0 +1,35 @@
+{
+	"name": "aniltest_finance",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "aniltest",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"database": "ods_corporate_finance"
+			}
+		},
+		"parameters": {
+			"schema": {
+				"type": "string",
+				"defaultValue": "public"
+			},
+			"table": {
+				"type": "string",
+				"defaultValue": "customer"
+			}
+		},
+		"annotations": [],
+		"type": "PostgreSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().schema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().table",
+				"type": "Expression"
+			}
+		}
+	}
+}
