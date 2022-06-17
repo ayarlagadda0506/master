@@ -3,7 +3,10 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "aniltest",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"database": "ods_corporate_finance"
+			}
 		},
 		"annotations": [],
 		"type": "PostgreSqlTable",
