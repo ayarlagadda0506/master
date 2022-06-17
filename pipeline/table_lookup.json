@@ -83,7 +83,14 @@
 							"inputs": [
 								{
 									"referenceName": "aniltest_finance",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"schema": "public",
+										"table": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
