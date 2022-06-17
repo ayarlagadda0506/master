@@ -99,7 +99,10 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"folder": "anil",
-										"file": "sample",
+										"file": {
+											"value": "@item().table_name",
+											"type": "Expression"
+										},
 										"container": "edis-sandbox"
 									}
 								}
