@@ -1,0 +1,31 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Lookup1",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "PostgreSqlSource",
+						"query": "SELECT table_name  FROM information_schema.tables\n                      WHERE table_schema='public' \n                      and (table_name like 'fact%' or table_name like 'dim%')\n                      and table_name  not like '%_bak_%'\n                      and table_name  not like '%_daily%'\n                      and table_name  not like '%_weekly%'\n                      and table_name  not like '%_monthly%'\n                      and table_name  not like '%_history%'"
+					},
+					"dataset": {
+						"referenceName": "list_tables",
+						"type": "DatasetReference"
+					}
+				}
+			}
+		],
+		"annotations": []
+	}
+}

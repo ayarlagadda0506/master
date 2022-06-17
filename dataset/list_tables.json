@@ -1,0 +1,12 @@
+{
+	"name": "list_tables",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "aniltest",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "PostgreSqlTable",
+		"schema": []
+	}
+}
