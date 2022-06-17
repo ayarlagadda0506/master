@@ -2,11 +2,17 @@
 	"name": "aniltest",
 	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
+		"parameters": {
+			"database": {
+				"type": "string",
+				"defaultValue": "ods_corporate_finance"
+			}
+		},
 		"annotations": [],
 		"type": "PostgreSql",
 		"typeProperties": {
-			"connectionString": "host=hia-corporate-aniltest-db-postgresqlcluster-14z8p5sxo53ok.cluster-cr2kpdcmptpq.us-east-1.rds.amazonaws.com;port=5432;database=ods_corporate_finance;uid=HIADBRoot;encryptionmethod=1;validateservercertificate=0",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJhNTllNGFhYS01ZjQyLTQ4MjEtODJiZC0xMGYxZDc4NGZmYjMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"connectionString": "host=hia-corporate-aniltest-db-postgresqlcluster-14z8p5sxo53ok.cluster-cr2kpdcmptpq.us-east-1.rds.amazonaws.com;port=5432;database=@{linkedService().database};uid=HIADBRoot;encryptionmethod=1;validateservercertificate=0",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI5YjYzMWUwNy02ZTQ5LTQxNjAtOWViYS1iMmVlYzdkYWVjNDciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "integrationRuntime",
