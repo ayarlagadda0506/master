@@ -87,7 +87,7 @@
 									"parameters": {
 										"schema": "public",
 										"table": {
-											"value": "@item()",
+											"value": "@item().table_name",
 											"type": "Expression"
 										}
 									}
