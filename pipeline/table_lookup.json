@@ -27,7 +27,8 @@
 				}
 			},
 			{
-				"name": "ForEach1",
+				"name": "for_each",
+				"description": "looping so that iterate each object separetly ",
 				"type": "ForEach",
 				"dependsOn": [
 					{
