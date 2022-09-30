@@ -1,0 +1,19 @@
+{
+	"name": "AmazonRedshift1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AmazonRedshift",
+		"typeProperties": {
+			"server": "corporate-anil-redshift-cluster.ciphngh1u3pf.us-east-1.redshift.amazonaws.com",
+			"database": "corporate_finance",
+			"port": 5439,
+			"username": "hiaroot",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJkOWQzNWY2ZC1mMGMxLTQyYTctOTc1OS1hMGU3ZTQxMjNjODgiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
