@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "https://services1.myworkday.com/ccx/service/customreport2/huron/ISU_INT-SFDC-02_FDM+Extract/HIA_Extract_Cost_Centers?format=json"
+				"relativeUrl": "HIA_Extract_Cost_Centers?format=json"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
