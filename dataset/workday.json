@@ -1,0 +1,22 @@
+{
+	"name": "workday",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "workday",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "https://services1.myworkday.com/ccx/service/customreport2/huron/ISU_INT-SFDC-02_FDM+Extract/HIA_Extract_Cost_Centers?format=json"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
