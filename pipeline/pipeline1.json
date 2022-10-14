@@ -841,7 +841,10 @@
 				"inputs": [
 					{
 						"referenceName": "workday",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"relative_url": "HIA_Extract_Customers?format=csv"
+						}
 					}
 				],
 				"outputs": [
