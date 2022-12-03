@@ -1,0 +1,21 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer1",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"url": "https://services1.myworkday.com/ccx/service/customreport2/huron/"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
