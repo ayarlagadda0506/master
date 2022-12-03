@@ -19,16 +19,18 @@
 						"type": "ParquetSource",
 						"storeSettings": {
 							"type": "HttpReadSettings",
-							"requestMethod": "POST",
-							"requestTimeout": ""
+							"requestMethod": "GET"
 						}
 					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
-						"referenceName": "objects",
-						"type": "DatasetReference"
+						"referenceName": "Parquet1",
+						"type": "DatasetReference",
+						"parameters": {
+							"relative_url": "ISU_INT-SFDC-02_FDM+Extract/HIA_Extract_Customers?format=json"
+						}
 					}
 				]
 			}
