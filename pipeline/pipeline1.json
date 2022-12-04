@@ -22,6 +22,12 @@
 							"requestMethod": "GET"
 						}
 					},
+					"sink": {
+						"type": "ParquetSink",
+						"formatSettings": {
+							"type": "ParquetWriteSettings"
+						}
+					},
 					"enableStaging": false
 				},
 				"inputs": [
@@ -31,6 +37,12 @@
 						"parameters": {
 							"relative_url": "ISU_INT-SFDC-02_FDM+Extract/HIA_Extract_Customers?format=json"
 						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "Parquet1",
+						"type": "DatasetReference"
 					}
 				]
 			}

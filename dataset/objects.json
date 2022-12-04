@@ -5,11 +5,20 @@
 			"referenceName": "workday",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"test": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation"
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().test",
+					"type": "Expression"
+				}
 			},
 			"compressionCodec": "snappy"
 		},
